@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Johnroy's Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+    <div class="flex justify-center h-20 w-full items-center">
+        <input type="number" id="displayAnswer" class="border-2 border-green-400 bg-black text-white text-3xl" readonly>
+    </div>
+
+    <div class="flex justify-center h-20 w-full items-center">
+        <input type="text" id="display" class="border-2 border-green-400 bg-black text-white text-xl" readonly>
+    </div>
+
+    <table class="flex justify-center items-center w-full h-80 text-3xl text-white">
+        <tr class="flex gap-4">
+            <td><button class="border-2 border-green-400 p-3 w-40">c</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('/')">/</button></td>
+        </tr>
+
+        <tr class="flex gap-3">
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('7')">7</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('8')">8</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('9')">9</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('*')">*</button></td>
+
+        </tr>
+
+        <tr class="flex gap-3">
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('4')">4</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('5')">5</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('6')">6</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('-')">-</button></td>
+        </tr>
+
+        <tr class="flex gap-3">
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('1')">1</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('2')">2</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('3')">3</button></td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('+')">+</button></td>
+        </tr>
+
+        <tr class="flex gap-3">
+            <td><button class="border-2 border-green-400 pt-3 pb-3 w-28 text-center">0</button>
+            </td>
+            <td><button class="border-2 border-green-400 p-3" onclick="appendtoDisplay('.')">.</button></td>
+            <td><button class="border-2 border-green-400 p-3">=</button></td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
